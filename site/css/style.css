@@ -1,0 +1,56 @@
+body {
+  background: #d4d2d2;
+}
+.protein {
+  background: #d18553;
+  width: 400px;
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.vegetables {
+  background: #008000;
+  width: 400px;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.fruits {
+  background: #adff2f;
+  width: 400px;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.whole_grains {
+  background: tomato;
+  width: 400px;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+div > span {
+  color: #00ced1;
+  background: #ebe083;
+  font-size: 40px;
+  font-weight: 400;
+}
+div > p {
+  background: #6097ce;
+  width: 400px;
+
+  padding-left: 20px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
