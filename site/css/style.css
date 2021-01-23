@@ -54,3 +54,35 @@ div > p {
   padding-top: 10px;
   box-sizing: border-box;
 }
+
+.sidebar {
+  background: #deb887;
+  width: 500px;
+}
+.photo {
+  width: 500px;
+}
+
+.main {
+  display: flex;
+}
+
+.food {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+ol {
+  box-sizing: border-box;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 100px;
+  padding-left: 10px;
+}
+.elements {
+  background: #ffd700;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  border: 8px dotted #ffa500;
+}
