@@ -1,5 +1,6 @@
 body {
-  background: #d4d2d2;
+  background-image: url(../img/pexels-lukas-616401.jpg);
+  background-size: contain;
 }
 .protein {
   background: #d18553;
@@ -80,6 +81,11 @@ ol {
   font-size: 20px;
   font-weight: 100px;
 }
+h1 {
+  color: #8b0909;
+  font-size: 40px;
+  font-weight: 800;
+}
 h2 {
   text-align: center;
   background: #fff8dc;
@@ -101,23 +107,4 @@ ul > li {
   padding-right: 10px;
   box-sizing: border-box;
   border: 8px dotted #ffa500;
-}
-
-header {
-  background: #95d11e;
-  text-align: center;
-  height: 100px;
-  margin: 20px 5px;
-  padding: auto;
-  border-style: ridge;
-  border-width: 5px;
-  border-color: #dbd879;
-}
-
-footer {
-  background: #03998f;
-  border: groove 3px #005a6e;
-  padding: 10px;
-  margin: 20px 5 px;
-  font-size: 18px;
 }
