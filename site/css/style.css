@@ -6,33 +6,33 @@ body {
 .protein {
   background: #d18553;
   width: 400px;
-  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px 5px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .vegetables {
   background: #008000;
   width: 400px;
-  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px 5px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .fruits {
   background: #adff2f;
   width: 400px;
-  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px 5px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 .whole_grains {
   background: tomato;
   width: 400px;
-  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px 5px;
+  padding: 0px;
+  margin-top: 20px;
 }
 
 div > span {
@@ -92,7 +92,7 @@ h2 {
   text-align: center;
   background: #fff8dc;
   font-size: 20px;
-  width: 500px;
+  width: 100%;
 }
 
 h3 {
