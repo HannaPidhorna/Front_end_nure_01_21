@@ -1,50 +1,47 @@
 body {
   background-image: url(../img/pexels-lukas-616401.jpg);
-  background-size: contain;
+  background-size: cover;
 }
+
 .protein {
   background: #d18553;
   width: 400px;
-  padding-left: 20px;
-  padding-top: 5px;
+  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 20px 5px;
 }
 
 .vegetables {
   background: #008000;
   width: 400px;
-  padding-left: 20px;
-  padding-top: 5px;
+  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 20px 5px;
 }
 
 .fruits {
   background: #adff2f;
   width: 400px;
-  padding-left: 20px;
-  padding-top: 5px;
+  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 20px 5px;
 }
 
 .whole_grains {
   background: tomato;
   width: 400px;
-
-  padding-left: 20px;
-  padding-top: 5px;
+  padding: auto;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 20px 5px;
 }
 
 div > span {
   color: #00ced1;
   background: #ebe083;
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 400px;
 }
+
 div > p {
   background: #6097ce;
   width: 400px;
@@ -55,47 +52,56 @@ div > p {
   box-sizing: border-box;
 }
 
-.sidebar {
+.healthy {
   background: #deb887;
   width: 500px;
 }
+
 .plate {
   width: 500px;
 }
+
 .platewithfood {
   width: 500px;
 }
 
-.main {
+.mcenter {
   display: flex;
   justify-content: center;
-  align-items: center;
+ 
 }
 
 .food {
   padding-left: 100px;
   padding-right: 100px;
 }
+
 ol {
   box-sizing: border-box;
   font-size: 20px;
   font-weight: 100px;
 }
+
 h1 {
   color: #8b0909;
   font-size: 40px;
   font-weight: 800;
 }
+
 h2 {
   text-align: center;
   background: #fff8dc;
+  font-size: 20px;
+  width: 500px;
 }
+
 h3 {
   font-size: 20px;
   font-weight: 100px;
   padding-left: 10px;
   background: #fff8dc;
 }
+
 ul > li {
   font-size: 20px;
   font-weight: 100px;
