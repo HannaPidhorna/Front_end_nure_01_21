@@ -1,0 +1,78 @@
+.poems {
+  display: inline-block;
+}
+
+.poem123 {
+  display: flex;
+  background-color: #8a2be2;
+  box-sizing: border-box;
+  width: 100%
+}
+
+.poem45 {
+  float: left;
+  background-color: #8d72a7;
+  box-sizing: border-box;
+  width: 30%;
+}
+
+.poem678 {
+  float: right;
+  background-color: #67438a;
+  box-sizing: border-box;
+  width: 70%;
+}
+
+.poem9 {
+  float: left;
+  background-color: #6c5f79;
+  box-sizing: border-box;
+  width: 20%;
+}
+
+.poem10 {
+  float: right;
+  background-color: #6c5f79;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.poem111213 {
+  display: flex;
+  float: right;
+  background-color: #67438a;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.poem14 {
+  float: left;
+  background-color: #6c5f79;
+  box-sizing: border-box;
+  width: 80%;
+
+}
+
+.poem151617 {
+  display: flex;
+  float: left;
+  background-color: #67438a;
+  box-sizing: border-box;
+  width: 60%;
+}
+
+.poem18 {
+  float: right;
+  background-color: #ac8acf;
+  box-sizing: border-box;
+  width: 20%;
+}
+
+
+.poem19 {
+  float: right;
+  background-color: #9b8daa;
+  box-sizing: border-box;
+  width: 20%;
+}
+
