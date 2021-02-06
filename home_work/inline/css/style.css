@@ -69,7 +69,7 @@ body {
 }
 
 .parent {
-    font-size: 0p;
+    font-size: 0px;
     
 }
 .width33 {
@@ -119,6 +119,9 @@ body {
     float: left;
 }
 
+.display_flex {
+    display:flex;
+}
 
 
 
