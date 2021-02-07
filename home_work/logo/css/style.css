@@ -1,9 +1,13 @@
 
-body{
+ body {
     transition-property: all;
-    transition-duration: 3s;
-    transition-delay: 0s;
-    transition-timing-function: ease-in; 
+    transition-duration: 1.5s;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-is; 
+}
+
+footer a {
+    transition: background 1.5s ease 0.5s;
 }
 
 ul {
