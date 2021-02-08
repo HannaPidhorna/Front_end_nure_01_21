@@ -1,0 +1,44 @@
+html {
+    font-weight: bold;
+    font-size: 20px;
+    background: rgb(109, 154, 206);
+}
+.animated {
+    width: max-content;
+    margin: 40px;
+    border: double 4px;
+    padding: 10px 20px;
+    transition: all 3s 0s;
+   
+}
+.container:hover .animated {
+    transform: translate(70vw, 0);
+}
+.bezier-positive {
+    color: yellow;
+    transition-timing-function: cubic-bezier(1.0, 0.8, 0.0, 0.9);
+}
+.bezier-negative {
+    color: magenta;
+    transition-timing-function: cubic-bezier(1.0, -0.5, 0.4, 1.5);
+}
+.linear {
+    color: cyan;
+    transition-timing-function: linear;
+}
+.ease-in-out {
+    color: green;
+    transition-timing-function: ease-in-out;
+}
+.ease-out {
+    color: red;
+    transition-timing-function: ease-out;
+}
+.ease-in {
+    color: orange;
+    transition-timing-function: ease-in;
+}
+.ease {
+    color: lightblue;
+    transition-timing-function: ease-in;
+}
