@@ -7,15 +7,17 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css"/>
         <link rel="icon" type="image/jpg" href="./img/planet.jpg"/>
         <style>
-            header {
-                background: #95d11e;
-                text-align: center;
-                height: 100px;
-                margin: 20px 5px;
-                padding: 0px;
-                border-style: ridge;
-                border-width: 5px;
-                border-color: #dbd879;
+            header{ 
+                position: fixed;
+                left: 0;
+                right: 0;
+                z-index: 10;
+                border: 8px groove #e9a022;
+                box-sizing: border-box;
+                background-color:  #91ca2e;
+                margin-top: 10px;
+                max-width: 100vw;
+                
             }
 
             footer {
@@ -25,12 +27,26 @@
                 margin: 20px 5px;
                 font-size: 18px;
                 text-align: center;
+                
             }
         </style>
     </head>
     <body>
         <header>
-            <h1 class="margin_top20">Здоровое питание</h1>
+            <span><h1>Здоровое питание</h1></span>
+            <div>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="link1">Рецепты</a>
+                        </li>
+                        <li><a href="#" class="link2">Продуктовая корзина</a>
+                        </li>
+                        <li><a href="#" class="link3">Примеры меню</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -163,9 +179,22 @@
             </article>
         </main> 
         <footer>
-            <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/">
-            Материалы с сайта Harvard School of Public Health </a>
+            <div><a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/">
+                Материалы с сайта Harvard School of Public Health </a>
+            </div>
+
+            <div>
+                <span><h4>Контакты</h4></span>
+                <ul class="logo">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            
         </footer> 
-                
+        <script> </script>       
     </body>
 </html>

@@ -2,188 +2,313 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*css reset*/
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
-body {
-  background-image: url(../img/pexels-lukas-616401.jpg);
-  background-size: cover;
-}
+/*main blocks*/
+  body {
+    background-image: url(../img/pexels-lukas-616401.jpg);
+    background-size: cover;
+    
+  }
+  /*header*/
+  .menu{
+    list-style: none;
+    font-size: 0;
+    background-color: darkolivegreen;
+    
 
-.mcenter {
-  display: flex;
-  justify-content: center;
+  }
+
+  .menu li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100px;
+  }
+
+  .link1 {
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .link2 {
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .link3 {
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .link1:hover {
+    background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  }
+
+  .link2:hover {
+    background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  }
+
+  .link3:hover {
+    background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
+  }
+
  
-}
-
-.healthy {
-  background: #deb887;
-}
-
-.food {
-  padding-left: 100px;
-  padding-right: 100px;
-  box-sizing: border-box;
-}
-
-.hover:hover {
-  background-color: rgb(0, 255, 255, 0.5);
-}
-
-.protein {
-  background: #d18553;
-  padding: 10px;
-}
-
-.vegetables {
-  background: #008000;
-  padding: 10px;
-}
-
-.fruits {
-  background: #adff2f;
-  padding: 10px;
-}
-
-.whole_grains {
-  background: tomato;
-  padding: 10px;
-}
-
-div > span {
-  color: #00ced1;
-  background: #ebe083;
-  font-size: 40px;
-  font-weight: 400px;
-}
-
-div > p {
-  background: #6097ce;
-  font-size: 20px;
-  font-weight: 100px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.position_relative {
-  position: relative;
-}
-
-.position_absolute {
-  position: absolute;
-}
 
 
-.elements {
-  background: url(../img/broccoli.png) no-repeat center/cover;
-  border: 8px dotted #e9a022;
-}
 
+/*main*/
+  .mcenter {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+    
+  }
 
-.broccoli::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top:0;
-  bottom: 0;
- 
-      
-}
+  .healthy {
+    background: #deb887;
+  }
 
-.VM {
-  left: 0;
-  top: 5%;
-  background-color: rgba(236, 236, 139, 0.5);
-}
+  .food {
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+  }
 
-.width500 {
-  width: 500px;
-}
+  .hover:hover {
+    background-color: rgb(0, 255, 255, 0.5);
+  }
 
-.margin_top20 {
-  margin-top: 20px;
-}
+  .protein {
+    background: #d18553;
+    padding: 10px;
+  }
 
-ol {
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 100px;
-  padding-left: 10px;
- 
-}
+  .vegetables {
+    background: #008000;
+    padding: 10px;
+  }
 
-ul > li {
-  box-sizing: border-box;
-  font-size: 20px;
-  font-weight: 100px;
-  padding-left: 10px;
-}
+  .fruits {
+    background: #adff2f;
+    padding: 10px;
+  }
 
-h1 {
-  position: fixed;
-  text-align:center;
-  color: #8b0909;
-  font-size: 50px;
-  font-weight: 800px;
-  width: 100%;
-}
+  .whole_grains {
+    background: tomato;
+    padding: 10px;
+  }
 
-h2 {
-  text-align: center;
-  background: #fff8dc;
-  font-size: 20px;
-  font-weight: 600px;
-  width: 100%;
-}
+  div > span {
+    color: #00ced1;
+    background: #ebe083;
+    font-size: 40px;
+    font-weight: 400px;
+  }
 
-h3 {
-  background: #fff8dc;
-  font-size: 20px;
-  font-weight: 600px;
+  div > p {
+    background: #6097ce;
+    font-size: 20px;
+    font-weight: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .position_relative {
+    position: relative;
+  }
+
+  .position_absolute {
+    position: absolute;
+  }
+
+  .elements {
+    background: url(../img/broccoli.png) no-repeat center/cover;
+    border: 8px dotted #e9a022;
+    box-sizing: border-box;
+  }
+
+  .broccoli::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top:0;
+    bottom: 0;      
+  }
+
+  .VM {
+    left: -8px;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(236, 236, 139, 0.5);
+  }
+
+  .width500 {
+    width: 500px;
+  }
+
+  .margin_top20 {
+    margin-top: 20px;
+  }
+
+  ol {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100px;
+    padding-left: 10px;
+  
+  }
+
+  ul > li {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 100px;
+    padding-left: 10px;
+  }
+
+  h1 {
+    padding: 20px;
+    text-align:center;
+    color: #8b0909;
+    font-size: 50px;
+    font-weight: 800px;
+    width: 100%;
+    
+  }
+
+  h2 {
+    text-align: center;
+    background: #fff8dc;
+    font-size: 20px;
+    font-weight: 600px;
+    width: 100%;
+  }
+
+  h3 {
+    background: #fff8dc;
+    font-size: 20px;
+    font-weight: 600px;
+    margin-top: 10px;
+    
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600px;
+    margin-top: 10px;
+  }
+
+/*logo*/
+
+  .logo{
+    list-style: none;
+    font-size: 0;
+
+  }
+
+  .logo li {
+    display: inline-block;
+    font-size: 16px;
    
-}
+  } 
+
+  .logo li>a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/sprites_new1.png);
+  }
+
+  footer a {
+    transition: all 1.5s ease 0.5s;
+  }
+
+  footer li>a {
+    background-position: 0 -50px;
+  }
+
+  footer li+li>a {
+    background-position:-50px -50px;
+  }
+
+  footer li+li+li>a {
+    background-position: -100px -50px;
+  }
+
+  footer li+li+li+li>a {
+    background-position: -150px -50px;
+  }
+
+  footer li+li+li+li+li>a {
+    background-position: -200px -50px;
+  }
+
+  footer li>a:hover{
+      background-position: 0 0;
+  }
+
+  footer li+li>a:hover {
+      background-position:-50px 0;
+  }
+
+  footer li+li+li>a:hover {
+      background-position: -100px 0;
+  }
+
+  footer li+li+li+li>a:hover {
+      background-position: -150px 0;
+  }
+
+  footer li+li+li+li+li>a:hover {
+      background-position: -200px 0;
+  }
+
 
 
 
