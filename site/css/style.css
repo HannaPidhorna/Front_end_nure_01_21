@@ -99,10 +99,7 @@
     background: linear-gradient(-160deg, #C3D600, #C3D600 50%, #A5B400 50%);
   }
 
- 
-
-
-
+  
 /*main*/
   .mcenter {
     display: flex;
@@ -169,24 +166,35 @@
   }
 
   .elements {
-    background: url(../img/broccoli.png) no-repeat center/cover;
+    /* background: url(../img/broccoli.png) no-repeat center/cover; */
     border: 8px dotted #e9a022;
     box-sizing: border-box;
   }
 
-  .broccoli::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top:0;
-    bottom: 0;      
+  .broccoli {
+    position: relative;
   }
 
-  .VM {
-    left: -8px;
+  .broccoli img{
+    left: 0;
     top: 0;
-    bottom: 0;
+    height: 900px;
+    width: 100%;
+            
+  }
+
+  /* .broccoli::after {
+    content: "";
+  }  */
+
+  .VM{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 900px;
     background-color: rgba(236, 236, 139, 0.5);
+    z-index: 10;
   }
 
   .width500 {
@@ -245,7 +253,6 @@
   }
 
 /*logo*/
-
   .logo{
     list-style: none;
     font-size: 0;
@@ -308,6 +315,8 @@
   footer li+li+li+li+li>a:hover {
       background-position: -200px 0;
   }
+
+
 
 
 
