@@ -55,12 +55,10 @@
     
   }
   /*header*/
-  .menu{
+  .menu {
     list-style: none;
     font-size: 0;
     background-color: darkolivegreen;
-    
-
   }
 
   .menu li {
@@ -110,12 +108,14 @@
 
   .healthy {
     background: #deb887;
+    flex-shrink: 6;
   }
 
   .food {
     padding-left: 50px;
     padding-right: 50px;
     box-sizing: border-box;
+    flex-shrink: 2;
   }
 
   .hover:hover {
@@ -169,6 +169,8 @@
     /* background: url(../img/broccoli.png) no-repeat center/cover; */
     border: 8px dotted #e9a022;
     box-sizing: border-box;
+    width: 600px;
+    flex-shrink: 2;
   }
 
   .broccoli {

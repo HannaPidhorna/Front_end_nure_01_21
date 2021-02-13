@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(143, 188, 143,0.5);
+}
+
+form {
+    display: block;
+    width: 300px;
+}
+
+textarea {
+    width: 200px;
+    height: 200px;
+    max-width: 300px;
+    min-width: 100px;
+    resize: none;
+    color: #0000cd;
+}
+
+textarea:hover {
+    background-color: rgba(91, 170, 0, 0.4);
+    transition: all 1s ease;
+}
+
+textarea:focus{
+    background: rgba(117, 179, 219, 0.4);
+    transition: all 1s ease;
+}
+
+div input[type="checkbox"] {
+    display: none;
+}
+
+div input[type="checkbox"] + label{
+    padding-left: 30px;
+    margin-left: 20px;
+    position: relative;
+}
+div input[type="checkbox"] + label:before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    top: 4px;
+    left: 0;
+}
+div input[type="checkbox"]:checked + label:after{
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 15px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(40deg);
+    top: 4px;
+    left: 4px;
+}
+
+div input {
+    border: none;
+}
+
+div input:hover {
+    border-style: dotted;
+    border-color: #4926aa;
+}
+
+div input:focus {
+    outline: none;
+    border-style: solid;
+    border-color: #4926aa;
+    background-color: #cecff5;
+}
+
+div input::placeholder {
+    opacity: 0.2;
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+div input:hover::placeholder {
+    opacity: 1;
+}
+  
+div input:focus::placeholder {
+    opacity: 1;
+    color: red;
+}
+
+
+div select {
+    position: relative;
+    
+}
+
+div select {
+   display: block;
+   appearance: none;
+   -webkit-appearance: none;/* Chrome */
+   -moz-appearance: none;/* Firefox */
+   width: 50%; /* от ширины блока div */
+   padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */
+   background: none; /* убираем фон */
+   border: 1px solid rgb(153, 152, 152); /* рамка */
+   border-radius: 3px;/* скругление полей формы */
+   font-family: inherit;/* наследует от родителя */
+   font-size: 1rem;
+   color: rgb(26, 55, 224);
+}
+
+div select::after {
+    content: "url(https://i.stack.imgur.com/N04pF.png)";
+    display: block;
+    /* background: url(../img/data.json) no-repeat right; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: rgb(116, 54, 54) transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    margin-top: -3px;
+}
+
+
+
+
+  
+
+  
