@@ -6,6 +6,15 @@
         background-color: rgb(143, 188, 143,0.5);
     }
 
+    h1 {
+        box-sizing: border-box;
+        max-width: 500px;
+        left: 0;
+        background-color: rgb(143, 188, 143,0.5);
+        margin: 0;
+        padding-left: 10px;
+    }
+
     form {
         display: block;
         width: 300px;
@@ -68,14 +77,14 @@
     }
 
     div input:hover {
-        border: 1px dotted #6d32da; /* рамка */
-        border-radius: 5px;/* скругление полей формы */
+        border: 1px dotted #6d32da;
+        border-radius: 5px;
     }
 
     div input:focus {
         outline: none;
-        border: 1px solid #6d32da; /* рамка */
-        border-radius: 5px;/* скругление полей формы */
+        border: 1px solid #6d32da;
+        border-radius: 5px;
         background-color: #cecff5;
     }
 /* input placeholder */
@@ -100,17 +109,15 @@
 
 /* select arrow */
     .select_number {
-        /* position: relative; */
         display: block;
-        margin: 5px;
-             
+        margin: 5px; 
     }
 
     .select_number select {
         display: block;
-        width: 50%; /*от ширины блока div  */
-        border: 1px solid #6d32da; /* рамка */
-        border-radius: 5px;/* скругление полей формы */
+        width: 50%;
+        border: 1px solid #6d32da;
+        border-radius: 5px;
         font-size: 1rem;
         color: #1a37e0;
         outline: none;
@@ -121,13 +128,12 @@
         background: url(../img/pngwing.com.png) no-repeat right center;
         background-size: 20px;
         background-color: #dcdcdc;
-        
-            
+                   
     }
 
     .button1 {
-        border: 1px solid #6d32da; /* рамка */
-        border-radius: 5px;/* скругление полей формы */
+        border: 1px solid #6d32da;
+        border-radius: 5px;
         font-size: 1rem;
         color: #1a37e0;
         outline: none;
@@ -136,8 +142,8 @@
 
     .button2 {
         
-        border: 1px solid #6d32da; /* рамка */
-        border-radius: 5px;/* скругление полей формы */
+        border: 1px solid #6d32da;
+        border-radius: 5px;
         font-size: 1rem;
         color: #1a37e0;
         outline: none;
