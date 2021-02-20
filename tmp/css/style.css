@@ -1,0 +1,38 @@
+.select {
+    position: relative;
+}
+
+.select select {
+    display: block;
+    width: 100px;
+    height: 64px;  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+   
+
+    outline: none;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: rgb(179, 69, 160);
+}
+
+.select :after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url(../img/pngwing.com.png)no-repeat right;
+    background-size: 20px;
+
+        
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    
+       
+}
