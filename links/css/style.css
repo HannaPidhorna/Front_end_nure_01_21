@@ -1,16 +1,14 @@
 nav {
     margin: 100px 0;
     background-color: #19e668;
-    
 }
 
-/* убираем отступы и поля, а также list-style для "ul", 
- * и добавляем "position:relative" */
+/* убираем отступы и поля, а также list-style для "ul"*/ 
+
 nav ul {
     padding:0;
     margin:0;
     list-style: none;
-   
 }
 
 /* стилизуем ссылки */
@@ -22,8 +20,6 @@ nav a {
     font-size:20px;
     line-height: 60px;
     text-decoration:none;
-  
-    
 }
 
 /* изменяем цвет фона при наведении курсора */
@@ -37,6 +33,8 @@ nav ul li {
     display:inline-block;
     background-color: #046320;
     position: relative;
+    width: 300px;
+
 }
 
 /* скрываем выпадающие списки по умолчанию и задаем абсолютное позиционирование */
@@ -44,19 +42,12 @@ nav ul li > ul {
     display: none;
     content: "";
     position: absolute;
-    top: 100%;
-	/* CSS-анимация */
-	max-height: 0px;
-	transition: max-height 0.4s linear;
-	-webkit-transition: max-height 0.4s linear;
-	-moz-transition: max-height 0.4s linear;
 }
 
 /* отображаем выпадающий список при наведении */
 nav ul li:hover > ul {
     display: block;
-    max-height: 500px;
-    
+    width: 300px;
 }
 
 /* первый уровень выпадающего списка */
@@ -69,36 +60,22 @@ nav ul ul li {
     font-size: 0;
 }
 
-.menu {
-    min-width: 300px;
-}
 
-.link1 {
+.link1{
     display: inline-block;
-    width: 260px;
+    position: relative;
     box-sizing: border-box;
-    font-size: 16px;
-}
-
-.link2{
-    display: inline-block;
-    width: 260px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.link3 {
-    display: inline-block;
-    width: 260px;
-    box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* magnifying-glass */
-.magnifying-glass {
-    display: inline-block;
-    position: relative;
+
+.link1::before {
+    content: "";
+    position: absolute;
     vertical-align: top;
+    top: -5px;
+    right: 0;
     margin: 10px;
     width: 40px;
     height: 40px; 
@@ -108,18 +85,95 @@ nav ul ul li {
     border-radius: 50%;
 }
 
-.magnifying-glass:after {
+.link1:after { 
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     right: 0;
     width: 30px;
     height: 10px;
     background-color: slategray;
     border-radius: 0 7.0px 7.0px 0;
-    transform-origin: 0 85%;
-    transform: translateX(70%) rotate(60deg);
+    transform-origin: 50% -20%;
+    transform: translateY(30%) rotate(75deg);
 }
+
+.link2{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* magnifying-glass */
+
+.link2::before {
+    content: "";
+    position: absolute;
+    vertical-align: top;
+    top: -5px;
+    right: 0;
+    margin: 10px;
+    width: 40px;
+    height: 40px; 
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 5px solid slategray;
+    border-radius: 50%;
+}
+
+.link2:after { 
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 30px;
+    height: 10px;
+    background-color: slategray;
+    border-radius: 0 7.0px 7.0px 0;
+    transform-origin: 50% -20%;
+    transform: translateY(30%) rotate(75deg);
+}
+
+.link3{
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* magnifying-glass */
+
+.link3::before {
+    content: "";
+    position: absolute;
+    vertical-align: top;
+    top: -5px;
+    right: 0;
+    margin: 10px;
+    width: 40px;
+    height: 40px; 
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border: 5px solid slategray;
+    border-radius: 50%;
+}
+
+.link3:after { 
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    width: 30px;
+    height: 10px;
+    background-color: slategray;
+    border-radius: 0 7.0px 7.0px 0;
+    transform-origin: 50% -20%;
+    transform: translateY(30%) rotate(75deg);
+}
+
+
+
 
 
 
