@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/* вендерные префиксы перед значений */
+/* -webkit- Chrome, Safari, Opera
+-moz- Mozila
+-ms- Internet Explorer
+-o- Opera */
+
+.wraper{
+	max-width: 1200px;
+	background: #fcc;
+	margin: 0 auto;
+}
+.wraper>div{
+	width: 500px;
+	margin: 20px auto;
+	min-height: 500px;
+}
+.circle{
+	height: 400px;
+	border: 4px solid red;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.square{
+	background: linear-gradient(rgba(255, 100, 50), #ff22bb);
+}
+
+.test03{
+	background: linear-gradient(#0cf, #2fa, #f2b, #f00);
+}
+.test04{
+	background: linear-gradient(to right, #00F, #0f0);
+}
+.test05{
+	background: linear-gradient(to right bottom, #454, #ccc);
+}
+.test06{
+	background: linear-gradient(to left top, #f4b, #abf, #faf);
+}
+.test07{
+	background: linear-gradient( #00F 50%, #0f0 70%, #f00);
+}
+.test08{
+	background: linear-gradient(#f0f 100px, #f00 200px, #ff0 400px, #bfa);
+}
+.wraper > .test09{
+	background: linear-gradient(to right bottom, #00F 50%, #0f0 50%);
+	width: 800px;
+}
+.wraper > .test10{
+	background: linear-gradient(45deg, #00F 40%, #0f0 50%);
+	width: 800px;
+}
+.wraper > .test11{
+	background: radial-gradient(#fb4 85%, #b2f 85%);
+	/*width: 800px;
+}
+.wraper > .test12{
+	background: radial-gradient(red, green, blue, orange);
+	width: 800px;
+}
+.wraper > .test13{
+	background: radial-gradient(circle, red, green, blue);
+	width: 800px;
+}
+.wraper > .test14{
+	background: radial-gradient(circle at 10% 80%, red, green, blue);
+	width: 800px;
+}
+.wraper > .test15{
+	background: radial-gradient(closest-corner circle at 10% 80%, red, green, blue);
+	width: 800px;
+}
+.wraper > .test16{
+	background: radial-gradient(closest-side circle at 10% 80%, red, green, blue);
+	width: 800px;
+}
+.wraper > .test17{
+	background: radial-gradient(farthest-side circle at 10% 80%, red, green, blue);
+	width: 800px;
+}
+.wraper > .test18{
+	background: repeating-linear-gradient(45deg, #f00 5px, #fff 20px, #fd4 40px, #ff0 60px, #faa 80px, #f00 95px);
+	width: 800px;
+}
+.wraper > .test19{
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: #0000;
+	font-size: 350px;
+	font-weight: bold;
+	width: 800px;
+	background-image: repeating-radial-gradient(farthest-side circle at 10% 80%, #4fa 20px, #2bf 40px, #faf 60px);
+}
+.wraper > .test20{
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: #0000;
+	font-size: 350px;
+	font-weight: bold;
+	width: 800px;
+	background-image: url('https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg');
+}
