@@ -1,5 +1,6 @@
 .select {
     position: relative;
+    display: inline-block;
 }
 
 .select select {
@@ -19,17 +20,17 @@
     color: rgb(179, 69, 160);
 }
 
-.select :after {
+.select:after {
     content:"";
     display: block;
     position: absolute;
     background: url(../img/pngwing.com.png)no-repeat right;
-    background-size: 20px;
+    background-size: 30px;
 
         
     pointer-events: none;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     top: 0;
     right: 0;
     z-index: 5;
