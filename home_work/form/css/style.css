@@ -108,28 +108,43 @@
     }
 
 /* select arrow */
-    .select_number {
-        display: block;
-        margin: 5px; 
+    .select {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 10px;
     }
 
-    .select_number select {
+    .select select {
         display: block;
-        width: 50%;
-        border: 1px solid #6d32da;
-        border-radius: 5px;
-        font-size: 1rem;
-        color: #1a37e0;
-        outline: none;
+        width: 100px;
+        height: 50px;
+        top: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
-        -webkit-appearance: none;/* Chrome */
-        -moz-appearance: none;/* Firefox */
-        -ms-progress-appearance: none;
-        background: url(../img/pngwing.com.png) no-repeat right center;
-        background-size: 20px;
-        background-color: #dcdcdc;
-                   
+        outline: none;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+        font-family: inherit;
+        font-size: 1rem;
+        color: rgb(179, 69, 160);
     }
+
+    .select:after{
+        content:"";
+        display: block;
+        position: absolute;
+        background: url(../img/pngwing.com.png)no-repeat right;
+        background-size: 30px;
+        pointer-events: none;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        z-index: 5;
+    }   
+        
 
     .button1 {
         border: 1px solid #6d32da;
@@ -141,7 +156,6 @@
     }
 
     .button2 {
-        
         border: 1px solid #6d32da;
         border-radius: 5px;
         font-size: 1rem;
