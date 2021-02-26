@@ -10,85 +10,245 @@
 
 .wraper{
 	max-width: 1200px;
-	background: #fcc;
+	background: rgb(221, 199, 199);
 	margin: 0 auto;
 }
 .wraper>div{
-	width: 500px;
-	margin: 20px auto;
-	min-height: 500px;
+	margin: 50px auto;
 }
+	
+.square{
+	background: linear-gradient(rgba(255, 100, 50), #ff22bb);
+	height: 200px;
+	width: 200px;
+	box-shadow: 10px 20px 20px;
+	
+}
+
+.rectangle1{
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(#0cf, #2fa, #f2b, #f00);
+}
+.oval{
+	height: 200px;
+	width: 300px;
+	border-radius: 50%;
+	background: linear-gradient(to right, #00F, #0f0);
+}
+
+.rectangle2 {
+	height: 200px;
+	width: 300px;
+	background: linear-gradient(to right bottom, rgb(80, 112, 80), #ccc);
+}
+
+.triangle-up{
+	height: 0;
+	width: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid green;
+}
+
+.triangle-down {
+	height: 0;
+	width: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 200px solid green;
+}
+
+.triangle-left {
+	height: 0;
+	width: 0;
+	border-top: 100px solid transparent;
+	border-right: 200px solid green;
+	border-bottom: 100px solid transparent;
+}
+
+.triangle-right {
+	height: 0;
+	width: 0;
+	border-top: 100px solid transparent;
+	border-left: 200px solid green;
+	border-bottom: 100px solid transparent;
+}
+
+.parallelogram {
+	width: 300px;
+	height: 200px;
+	transform: skew(15deg) ;
+	background: linear-gradient(to left top, #f4b, #abf, #faf);
+}
+
+.trapezoid {
+	width: 200px;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	border-bottom: 100px solid green;
+	
+}
+
 .circle{
-	height: 400px;
+	height: 200px;
+	width: 200px;
 	border: 4px solid red;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
+	background: radial-gradient(red, green, blue, orange);
+	
+} 
+/* 
+   сердце */
+.heart {
+    position: relative;
+    width: 200px;
+    height: 160px;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    
+    width: 100px;
+    height: 160px;
+    left: 100px;
+    
+    background: linear-gradient( rgb(255, 17, 0) 50%, rgb(208, 238, 36) 70%, #f00);
+    
+    border-radius: 100px 100px 0 0;
+    
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after {
+    left: 0;
+    
+    transform-origin: 100% 100%;
+    transform: rotate(45deg);
 }
 
-.square{
-	background: linear-gradient(rgba(255, 100, 50), #ff22bb);
-}
-
-.test03{
-	background: linear-gradient(#0cf, #2fa, #f2b, #f00);
-}
-.test04{
-	background: linear-gradient(to right, #00F, #0f0);
-}
-.test05{
-	background: linear-gradient(to right bottom, #454, #ccc);
-}
-.test06{
-	background: linear-gradient(to left top, #f4b, #abf, #faf);
-}
-.test07{
-	background: linear-gradient( #00F 50%, #0f0 70%, #f00);
-}
-.test08{
-	background: linear-gradient(#f0f 100px, #f00 200px, #ff0 400px, #bfa);
-}
-.wraper > .test09{
+.wraper>.text{
 	background: linear-gradient(to right bottom, #00F 50%, #0f0 50%);
 	width: 800px;
+	font-size: 40px;
+	text-shadow: 20px 20px 5px black;
 }
-.wraper > .test10{
-	background: linear-gradient(45deg, #00F 40%, #0f0 50%);
-	width: 800px;
+
+.wraper>.avocado {
+	max-width: 250px;
+	min-height: 250px;
+	border-radius: 45px 300px 80px;
+	background: radial-gradient(#fb4 45%, rgb(34, 255, 82) 45%);
+	
 }
-.wraper > .test11{
-	background: radial-gradient(#fb4 85%, #b2f 85%);
-	/*width: 800px;
+
+.diamond {
+	display: flex;
+	margin: 10px;
+	justify-content: space-around;
+	padding-top: 50px;
 }
-.wraper > .test12{
+.diamond1 {
+	width: 300px;
+	height: 300px;
+	transform: rotate(45deg);
+	background: linear-gradient(#f0f 100px, #f00 200px, #ff0 400px, #bfa);
+}
+
+.diamond2 {
+	background: linear-gradient(45deg, rgb(178, 189, 26) 40%, rgb(49, 161, 49) 50%);
+	width: 300px;
+	height: 300px;
+	transform: rotate(45deg);
+}
+
+.sun {
+	display: flex;
+	margin: 10px;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+.sun1 {
 	background: radial-gradient(red, green, blue, orange);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test13{
+.sun2 {
 	background: radial-gradient(circle, red, green, blue);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test14{
+.sun3 {
 	background: radial-gradient(circle at 10% 80%, red, green, blue);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test15{
+.sun4 {
 	background: radial-gradient(closest-corner circle at 10% 80%, red, green, blue);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test16{
+.sun5 {
 	background: radial-gradient(closest-side circle at 10% 80%, red, green, blue);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test17{
+.sun6 {
 	background: radial-gradient(farthest-side circle at 10% 80%, red, green, blue);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
-.wraper > .test18{
+.sun7 {
 	background: repeating-linear-gradient(45deg, #f00 5px, #fff 20px, #fd4 40px, #ff0 60px, #faa 80px, #f00 95px);
-	width: 800px;
+	height: 200px;
+	width: 200px;
+	border: 4px solid rgb(170, 49, 116);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 .wraper > .test19{
 	-webkit-background-clip: text;
