@@ -250,7 +250,7 @@
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
-.wraper > .test19{
+.wraper > .word1{
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: #0000;
@@ -259,12 +259,12 @@
 	width: 800px;
 	background-image: repeating-radial-gradient(farthest-side circle at 10% 80%, #4fa 20px, #2bf 40px, #faf 60px);
 }
-.wraper > .test20{
+.wraper > .word2{
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: #0000;
-	font-size: 350px;
+	font-size: 300px;
 	font-weight: bold;
 	width: 800px;
-	background-image: url('https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg');
+	background-image: url(../img/Screenshot_2.png);
 }
