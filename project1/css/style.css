@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
+@font-face {
+    font-family: 'kobzar';
+    src: url('../fonts/8926-webfont.eot');
+    src: url('../fonts/8926-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/8926-webfont.woff2') format('woff2'),
+         url('../fonts/8926-webfont.woff') format('woff'),
+         url('../fonts/8926-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,6 +83,7 @@ body {
     display: block;
     text-align: center;
     padding-left: 30%;
+    font-family: 'kobzar';
 
 }
 
@@ -93,13 +106,6 @@ body {
 
 }
 
-/* .background {
-    display: inline-block;
-    position: absolute;
-   
-
-} */
-
 .bluearrow {
     display: block;
     position: absolute;
@@ -118,19 +124,46 @@ body {
     z-index: 10;
 }
 
-.text {
+.text1 {
+    display: block; 
+    box-sizing: border-box;
+    position: absolute;
+
+    width: 289px;
+    height: 37px;
+    /* border: 3px solid #ffffff; */
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+
+
+    top: 50%;
+    left: 0;
+    padding: 40px;
+    z-index: 15;
+}
+
+.text2 { 
+    display: block; 
+    box-sizing: border-box;
+    position: absolute;
+
     font-family: 'Roboto', sans-serif; 
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    display: block;
+    width: 500px;
     color: white;
-    box-sizing: border-box;
-    position: absolute;
     top: 50%;
-    left: 50%;
-    z-index: 10;
+    left: 30%;
+
+    z-index: 15;
 }
+
 
 
    
