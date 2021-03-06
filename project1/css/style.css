@@ -101,7 +101,7 @@ body {
 .wrapper {
     margin-top: 10px;
 }
-
+/* section1 */
 .baner {
     background: url(../img/банер\ \(1\).png) no-repeat center/cover;
     position: relative;
@@ -131,16 +131,16 @@ body {
 .text2 {   
     display: block;
     text-decoration: none;
-    max-width: 300px;
+    max-width: 370px;
     float:  left;
-    padding-left: 100px;
-    padding-top: 135px;
-    padding-bottom: 115px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
     z-index: 10;
    
 }
 
-.text2 h3 {
+.text2 h2 {
     text-shadow: -1px -1px 0px white;
     color: #000000;
     font-size: 20px;
@@ -148,37 +148,153 @@ body {
     font-style: normal;
     line-height: 24px;
     text-transform: uppercase;
+    width: 280px;
+
    
 }
 
-.text2::before::after {
-    
-
-    content: "";
+ /* .text2::after {
+    content: url(../img/лого.png);
     position: absolute;
-    background-image: url(../img/лого.png) no-repeat left/contain;
     top: 0;
     left:  0;
-    z-index: 10;
-}
+    width: 300px;
+    z-index: 15;
+} */
 
 .text1 { 
     display: block; 
     box-sizing: border-box;
     float: right;
     width: 66%;
-
     font-family: 'Roboto', sans-serif; 
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
     color: white;
-
     padding-top: 120px;
     padding-bottom: 100px;
-
     z-index: 5;
 }
+
+/* section2 */
+
+.services {
+    padding-top: 200px;
+}
+
+.business {
+    width: 25%;
+    float: left;
+    padding-left: 70px ;
+    position: relative;
+}
+
+.business::after {
+    content: url(../img/business1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+.user {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 80px;
+}
+
+.user::after {
+    content: url(../img/user2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+.sale {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 90px;
+}
+
+.sale::after {
+    content: url(../img/sale3.png);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100px;
+}
+
+.services div>ul {
+    padding-top: 30px;
+    display: block;
+
+}
+
+/* news */
+
+.news {
+    float: left;
+    width: 30%;
+    padding-top: 150px;
+    margin: 10px;
+}
+
+.news div {
+    margin-top: 20px;
+}
+
+.news div>p {
+    margin-top: 20px;
+}
+
+.news div>h4 {
+    width: 100px;
+    background-color:#3676a4;
+    color: white;
+    padding-left: 10px;
+   
+}
+ h3 {
+    color: #3676a4;
+ }
+
+ /* justice */
+
+.justice {
+     width: 60%;
+     float: left;
+     padding-top: 150px;
+     margin: 10px;
+     padding-left: 50px;
+ }
+
+.justice p {
+    margin-top: 20px;
+    line-height: 2.5;
+}
+
+/* footer */
+
+footer {
+    padding-top: 100px;
+}
+
+.adress {
+    float: right;
+}
+
+.adress ul li > a {
+    padding-left: 120px;
+    color: black;
+}
+
+
 
 
 
