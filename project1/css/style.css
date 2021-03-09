@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 
-@font-face {
+/* @font-face {
     font-family: 'kobzar';
     src: url('../fonts/8926-webfont.eot');
     src: url('../fonts/8926-webfont.eot?#iefix') format('embedded-opentype'),
@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+} */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,10 +57,10 @@ table {
 	border-spacing: 0;
 }
 
+
 .container {
-    min-width: 1200px;
-    max-width: 100vw;
-    margin: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body {
@@ -73,48 +73,52 @@ body {
     clear:both;
 }
 
+/* <header> */
 .tel {
-    display: block;
-    text-align: right;
+    float: right;
     padding-right: 5px;
 }
 
 .links {
-    display: block;
-    text-align: center;
+    float: left;
     padding-left: 30%;
-    font-family: 'kobzar';
-
 }
 
 .links li {
     display: inline-block;
     margin: 5px;
+   
 }
 
-.baner {
+.links li>a {
     display: block;
-    position: relative;
-    width: 100vw;
-    max-width: 100%;
-    background: url(../img/банер\ \(1\).png) no-repeat center;
-    text-align: center;
-    top: 0;
-    height: 400px;
-    width: 100vw;
-    max-width: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
 
+/* <main> */
+
+.wrapper {
+    margin-top: 10px;
+}
+/* section1 */
+.baner {
+    background: url(../img/банер\ \(1\).png) no-repeat center/cover;
+    position: relative;
+    max-width: 1200px;
+    z-index: 1;
+ 
 }
 
 .bluearrow {
-    display: block;
+    background: url(../img/стрелка.png) no-repeat left/contain;
     position: absolute;
-    min-height: 400px;
-   padding-top: 40px;
+    top: 0;
+    min-width: 33%;
     z-index: 5;
 }
 
-.owl {
+/* .owl {
     display: block;
     padding: 10px;
     box-sizing: border-box;
@@ -122,47 +126,226 @@ body {
     left: 30px;
     top: 30px;
     z-index: 10;
+} */
+
+.text2 {   
+    display: block;
+    text-decoration: none;
+    max-width: 370px;
+    float:  left;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    z-index: 10;
+   
 }
 
-.text1 {
-    display: block; 
-    box-sizing: border-box;
-    position: absolute;
-
-    width: 289px;
-    height: 37px;
-    /* border: 3px solid #ffffff; */
+.text2 h2 {
+    text-shadow: -1px -1px 0px white;
     color: #000000;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
     line-height: 24px;
-    text-align: left;
     text-transform: uppercase;
+    width: 280px;
 
-
-    top: 50%;
-    left: 0;
-    padding: 40px;
-    z-index: 15;
+   
 }
 
-.text2 { 
+ /* .text2::after {
+    content: url(../img/лого.png);
+    position: absolute;
+    top: 0;
+    left:  0;
+    width: 300px;
+    z-index: 15;
+} */
+
+.text1 { 
     display: block; 
     box-sizing: border-box;
-    position: absolute;
-
+    float: right;
+    width: 66%;
     font-family: 'Roboto', sans-serif; 
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    width: 500px;
     color: white;
-    top: 50%;
-    left: 30%;
-
-    z-index: 15;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    z-index: 5;
 }
+
+/* section2 */
+
+.services {
+    padding-top: 200px;
+}
+
+.business {
+    width: 25%;
+    float: left;
+    padding-left: 70px ;
+    position: relative;
+}
+
+.business::after {
+    content: url(../img/business1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+.user {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 80px;
+}
+
+.user::after {
+    content: url(../img/user2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}
+
+.sale {
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-left: 90px;
+}
+
+.sale::after {
+    content: url(../img/sale3.png);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100px;
+}
+
+.services div>ul {
+    padding-top: 30px;
+    display: block;
+
+}
+
+/* news */
+
+.news {
+    float: left;
+    width: 30%;
+    padding-top: 150px;
+    margin: 10px;
+}
+
+.news div {
+    margin-top: 20px;
+}
+
+.news div>p {
+    margin-top: 20px;
+}
+
+.news div>h4 {
+    width: 100px;
+    background-color:#3676a4;
+    color: white;
+    padding-left: 10px;
+   
+}
+ h3 {
+    color: #3676a4;
+ }
+
+ /* justice */
+
+.justice {
+     width: 60%;
+     float: left;
+     padding-top: 150px;
+     margin: 10px;
+     padding-left: 50px;
+ }
+
+.justice p {
+    margin-top: 20px;
+    line-height: 2.5;
+}
+
+/* footer */
+
+footer {
+    padding-top: 50px;
+}
+
+footer .adress {
+    float: right;
+}
+
+.adress ul li > a {
+    padding-left: 120px;
+    color: black;
+    text-decoration: none;
+} 
+
+/* logo */
+ footer .sprites{
+    list-style: none;
+    font-size: 0;
+    float: left;
+
+}
+
+footer .sprites .logo li {
+    display: inline-block;
+    font-size: 16px;
+        
+} 
+
+footer .sprites .logo li>a {
+    display: block;
+    width: 28px;
+    height: 24px;
+    float: left;
+    background-image: url(../img/sprites\ ok.png);
+    transition: all 1.5s ease 0.5s;
+   
+}
+
+footer li > a{
+	background-position: 0 -24px;
+}
+footer li + li > a{
+	background-position: -28px -24px;
+}
+footer li + li +li > a{
+	background-position: -56px -24px;
+}
+footer li + li +li +li > a{
+	background-position: -84px -24px;
+}
+
+footer li > a:hover{
+	background-position: 0 0;
+}
+footer li + li > a:hover{
+	background-position: -28px 0;
+}
+footer li + li +li > a:hover{
+	background-position: -56px 0;
+}
+footer li + li +li +li > a:hover{
+	background-position: -84px 0;
+}
+
+
 
 
 
