@@ -87,12 +87,14 @@ body {
 .links {
     text-align: center;
     font-size: 0;
+    position: relative;
 }
 
 .links li {
     display: inline-block;
     margin: 5px;
     font-size: 16px;
+    
 }
 
 .links li>a {
@@ -100,6 +102,16 @@ body {
     padding: 10px;
     text-decoration: none;
     color: black;
+    
+}
+
+.links li>a::after {
+
+    content: url(../img/маркеры.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 5px;
 }
 
 /* <main> */
@@ -287,10 +299,9 @@ body {
 /* button */
 
 .button {
-    /* display: block;
-    box-sizing: border-box; */
     max-width: 1200px;
     font-size: 0;
+    position: relative;
 }
 
 .button div {
