@@ -104,15 +104,14 @@ body {
     color: black;
     
 }
-
+/* 
 .links li>a::after {
-
-    content: url(../img/маркеры.png);
+    display: inline-block;
+    content: " ";
     position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 5px;
-}
+    left: 0;
+    max-width: 2px;
+} */
 
 /* <main> */
 
