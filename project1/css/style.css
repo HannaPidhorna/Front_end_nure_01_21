@@ -228,14 +228,17 @@ body {
 }
 
 
-/* .business::after {
-    content: url(../img/бордер.png);
+.business::after {
+    content: " ";
     position: absolute;
+    background-color: #6f6f6f;
     top: 0;
     left: 65px;
-    width: 5px;
+    width: 1px;
+    min-height: 200px;
+    box-shadow: 3px 1px 5px;
 
-} */
+}
 
 .user {
     display: inline-block;
@@ -255,13 +258,16 @@ body {
     min-height: 130px;
 }
 
-/* .user::after {
-    content: url(../img/бордер.png);
+.user::after {
+    content: " ";
     position: absolute;
+    background-color: #6f6f6f;
     top: 0;
     left: 70px;
-    width: 5px;
-} */
+    width: 1px;
+    min-height: 200px;
+    box-shadow: 3px 1px 5px;
+}
 
 .sale {
     display: inline-block;
@@ -280,14 +286,17 @@ body {
     min-height: 100px;
 }
 
-/* 
 .sale::after {
-    content: url(../img/бордер.png);
+    content: " ";
     position: absolute;
+    background-color: #6f6f6f;
     top: 0;
-    left:85px;
-    width: 5px;
-} */
+    left: 85px;
+    width: 1px;
+    min-height: 200px;
+    box-shadow: 3px 1px 5px;
+
+}
 
 .services div>ul {
     padding-top: 30px;
@@ -383,7 +392,7 @@ body {
 }
 
 .button h2 {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
 }
 
@@ -391,10 +400,15 @@ body {
 
 footer {
     padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
 
 footer .adress {
     float: right;
+    padding-left: 100px;
+    width: 300px;
+  
 }
 
 .adress ul li > a {
@@ -406,6 +420,9 @@ footer .adress {
 /* logo */
  footer .sprites{
     float: left;
+    padding-right: 100px;
+    width: 120px;
+   
 }
 
 footer .sprites .logo {
@@ -450,6 +467,18 @@ footer li + li +li > a:hover{
 }
 footer li + li +li +li > a:hover{
 	background-position: -90px 0;
+}
+
+/* copyright */
+
+.copyright {
+    float: left;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 150px;
+    color: black;
+   
+    
 }
 
 
