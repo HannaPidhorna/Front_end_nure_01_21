@@ -40,3 +40,18 @@ h1 p {
 .tree_color_blocks {
     padding-top: 500px;
 }
+
+.block_red {
+    background: url(../img/block_red.png) no-repeat;
+    min-height: 300px;
+}
+
+.block_green {
+    background: url(../img/block_green.png) no-repeat;
+    min-height: 300px;
+}
+
+.block_blue {
+    background: url(../img/block_blue.png) no-repeat;
+    min-height: 300px; 
+}
