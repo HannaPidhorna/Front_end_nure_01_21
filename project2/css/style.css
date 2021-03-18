@@ -3,24 +3,40 @@ body {
 }
 
 header {
-    background-image: url(../img/__\ IMG-header1.png);
+    /* background-image: url(../img/__\ IMG-header1.png); */
     width: 100%;
-    min-height: 1000px;
+    min-height: 1500px;
     position: relative;
-    
-
+    background: url(../img/__\ GLOW_EFFECT.png) no-repeat center/cover;
 }
 
-header::after {
+/* header::after {
     content: "";
     position: absolute;
     width: 100%;
     min-height: 1000px;
     top: 0;
     left: 0;
-    background-color:rgb(38, 45, 73,0.8);
+    background-color:rgb(38, 45, 73,0.5);
     z-index: 2;
+} */
+
+nav  ul li>a {
+      
+    color: white;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 500px;
+}
 
+h1 p {
+    color: white;
+    font-weight: 200;
+}
 
+.tree_color_blocks {
+    padding-top: 500px;
+}
