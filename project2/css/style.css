@@ -2,29 +2,62 @@ body {
     background-color: white;
 }
 
-header {
-    position: relative;
-    
+.section1 {
+    position: relative; 
     width: 100%;
     min-height: 1500px;
         
-    background: url(../img/radial_gradient.png) no-repeat center/cover,
-    url(../img/legs.png) no-repeat center/cover,
-    
-    rgb(38, 45, 73); 
-    /* radial-gradient(circle farthest-corner at right top,rgb(48, 59, 100) 50%,transparent); */
-    background-size: 100%, 100%, 100%;
-    background-blend-mode: overlay;
+    background: url(../img/__\ IMG-header1.png) no-repeat center/cover;
+    z-index: -2;
+    padding-bottom: 100px;
 
-    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%); 
-  
 }
- nav a {
-    padding: 50px;
- }
+.section1::before {
+    content:"";
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right bottom, #282e46 50%,transparent 50%) no-repeat bottom;
+    background-size: 100%;
+    width: 100%;
+    min-height: 15%;
+    bottom: -15%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.section1::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: rgb(38, 45, 73,0.95);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+/* 
+::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: radial-gradient(rgb(244, 245, 248) 10%, transparent)no-repeat right;
+    background-size: 50%;
+    width: 50%;
+    height: 50%;
+    top: -20%;
+    right: 0;
+    z-index: -1;
+} */
+
+nav a {
+    padding: 100px;
+}
 
 nav ul {
-    padding: 50px;
+    padding: 100px;
 }
 
 nav  ul li>a {
@@ -48,19 +81,14 @@ h1 p {
 }
 
 .blocks {
-    display: block;
+
+    z-index: 1;
     position: absolute;
+    z-index: 1;
+    width: 60%;
     left: 20%;
     right: 20%;
-    top: 30%;
-    min-width: 60%;
-    padding-bottom: 200px;
-    z-index: 10;
-}
-.tree_color_blocks {
-    padding-top: 550px;
-    padding-bottom: 200px;
-     
+    top: 100%;
 }
 
 .block_red {
@@ -94,7 +122,7 @@ h2 p {
 }
 
 /* .services_section */
-.services_section {
+/* .services_section {
     
     position: absolute;
     left: 20%;
@@ -119,7 +147,7 @@ h2 p {
 .training {
     min-height: 300px;
     background-color: grey;
-}
+} */
 
 /* dream_team section */
 
