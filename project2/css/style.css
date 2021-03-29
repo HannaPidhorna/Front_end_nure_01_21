@@ -9,28 +9,14 @@ body {
         
     background: url(../img/__\ IMG-header1.png) no-repeat center/cover;
     z-index: -2;
-    padding-bottom: 100px;
-
-}
-.section1::before {
-    content:"";
-    display: block;
-    position: absolute;
-    background: linear-gradient(to right bottom, #282e46 50%,transparent 50%) no-repeat bottom;
-    background-size: 100%;
-    width: 100%;
-    min-height: 15%;
-    bottom: -15%;
-    left: 0;
-    right: 0;
-    z-index: -1;
+  
 }
 
 .section1::after {
     content:"";
     display: block;
     position: absolute;
-    background: rgb(38, 45, 73,0.95);
+    background: rgb(38, 45, 73,0.90);
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -38,19 +24,20 @@ body {
     right: 0;
     z-index: -1;
 }
-/* 
-::after {
+
+.section1::before {
     content:"";
     display: block;
     position: absolute;
-    background: radial-gradient(rgb(244, 245, 248) 10%, transparent)no-repeat right;
+    background: radial-gradient(rgb(48, 59, 100,0.85) 20%, transparent 60%)no-repeat right;
+   
     background-size: 50%;
     width: 50%;
     height: 50%;
     top: -20%;
     right: 0;
     z-index: -1;
-} */
+}
 
 nav a {
     padding: 100px;
@@ -80,38 +67,14 @@ h1 p {
     font-weight: 200;
 }
 
-.blocks {
-
-    z-index: 1;
-    position: absolute;
-    z-index: 1;
-    width: 60%;
-    left: 20%;
-    right: 20%;
-    top: 100%;
-}
-
-.block_red {
-    background: url(../img/block_red.png) no-repeat;
-    min-height: 300px;
-}
-
-.block_green {
-    background: url(../img/block_green.png) no-repeat;
-    min-height: 300px;
-}
-
-.block_blue {
-    background: url(../img/block_blue.png) no-repeat;
-    min-height: 300px; 
-}
 
 h2 {
     color: black;
     text-align: center;
     font-weight: 800;
     font-size: 50px;
-    padding-bottom: 200px; 
+    padding-bottom: 200px;
+    
 
 }
 
@@ -121,17 +84,46 @@ h2 p {
     font-size: 40px;
 }
 
-
-/* .services_section {
-    
-    position: absolute;
-    left: 20%;
-    right: 20%;
-    top: 80%;
-    min-width: 60%;
+.section2 {
     padding-bottom: 200px;
 }
 
+.section2::before {
+    content:"";
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right bottom, rgb(40, 46, 70,0.95) 50%,transparent 50%) no-repeat bottom;
+    background-size: 100%;
+    width: 100%;
+    min-height: 15%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/* blocks */
+.tree_color_blocks {
+    padding-bottom: 200px;
+}
+
+.block_red {
+    background: url(../img/block_red.png) no-repeat;
+    min-height: 300px;
+ 
+}
+
+.block_green {
+    background: url(../img/block_green.png) no-repeat;
+    min-height: 300px;
+
+}
+
+.block_blue {
+    background: url(../img/block_blue.png) no-repeat;
+    min-height: 300px; 
+}
+
+/* services */
 .cardio {
     min-height: 300px;
     background-color:grey;
@@ -147,26 +139,68 @@ h2 p {
 .training {
     min-height: 300px;
     background-color: grey;
-} */
+} 
 
-/* dream_team section */
-
-/* .dream_team {
+/* section3 */
+.section3 {
     background-color:#f7f7f7;
-    clip-path: polygon(0 22%, 100% 0, 100% 100%, 0% 100%);
-    width: 100%;
-    min-height: 1500px;
+    padding-bottom: 200px;
     position: relative;
-    
+    width: 100%;
+    min-height: 1000px;
+ 
 }
 
-.team {
+.section3::before {
+    content:"";
     display: block;
     position: absolute;
-    left: 20%;
-    right: 20%;
-    top: 30%;
-    min-width: 60%;
+    background: linear-gradient(to right bottom, transparent 50%, #f7f7f7 50%) no-repeat top;
+    background-size: 100%;
+    width: 100%;
+    min-height: 15%;
+    left: 0;
+    right: 0;
+    top: -150px;
+}
+
+.eva{
+    background-color: white;
+    min-height: 300px;
+}
+
+.nick {
+    background-color: grey;
+    min-height: 300px;
+}
+
+.john{
+    background-color: white;
+    min-height: 300px;
+}
+
+/* section4 */
+
+.section4 {
+    background: url(../img/pr_bg1.png) no-repeat center/cover;
+    width: 100%;
+    min-height: 1500px;
     padding-bottom: 200px;
-    z-index: 8;
+    padding-top: 200px;
+
+}
+
+/* .section4>h2 {
+    color: white;
+
 } */
+
+.yoga_pilates {
+    background-color:#00a8ff;
+    min-height: 300px;
+}
+
+.cardio_training{
+    background-color: #bbbbbb;
+    min-height: 300px;
+}
