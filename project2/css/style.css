@@ -1,6 +1,4 @@
-body {
-    background-color: white;
-}
+
 
 .section1 {
     position: relative; 
@@ -84,6 +82,10 @@ h2 p {
     font-size: 40px;
 }
 
+h3 {
+    color: white;
+}
+
 .section2 {
     padding-bottom: 200px;
 }
@@ -107,37 +109,36 @@ h2 p {
 }
 
 .block_red {
-    background: url(../img/block_red.png) no-repeat;
-    min-height: 300px;
- 
+    background: url(../img/block1_bg_red.png) no-repeat center/cover;
+    min-height: 400px;
+   
 }
 
 .block_green {
-    background: url(../img/block_green.png) no-repeat;
-    min-height: 300px;
-
+    background: url(../img/block2_bg_green.png) no-repeat center/cover;
+    min-height: 400px;
 }
 
 .block_blue {
-    background: url(../img/block_blue.png) no-repeat;
-    min-height: 300px; 
+    background: url(../img/block3_bg_blue.png) no-repeat center/cover;
+    min-height: 400px;
 }
 
 /* services */
 .cardio {
-    min-height: 300px;
+    min-height: 400px;
     background-color:grey;
    
 }
 
 .yoga {
-    min-height: 300px;
+    min-height: 400px;
     background-color:white;
     
 } 
 
 .training {
-    min-height: 300px;
+    min-height: 400px;
     background-color: grey;
 } 
 
@@ -166,17 +167,17 @@ h2 p {
 
 .eva{
     background-color: white;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .nick {
     background-color: grey;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 .john{
     background-color: white;
-    min-height: 300px;
+    min-height: 400px;
 }
 
 /* section4 */
@@ -187,20 +188,63 @@ h2 p {
     min-height: 1500px;
     padding-bottom: 200px;
     padding-top: 200px;
+    position: relative;
+    z-index: -2;
+   
+}
+
+.section4::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: radial-gradient(rgb(128, 128, 128,0.5) 20%, rgb(0, 0, 0, 0.6) 60%)no-repeat center/cover;
+    width: 100%;
+    min-height: 1500px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 
 }
 
-/* .section4>h2 {
-    color: white;
-
-} */
-
 .yoga_pilates {
     background-color:#00a8ff;
-    min-height: 300px;
+    min-height: 400px;
+    
 }
 
 .cardio_training{
     background-color: #bbbbbb;
-    min-height: 300px;
+    min-height: 400px;
+}
+
+/* section5 */
+.section5 {
+    background-color:#00a8ff;
+    width: 100%;
+    min-height: 700px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+
+
+.section6_footer {
+    background-color:#2f3960;
+    width: 100%;
+    min-height: 700px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+
+.reserve {
+    min-height: 400px;
+    background-color: red;
+}
+
+.opening_hours {
+    min-height: 400px;
+    background-color: red;
+    
+    
 }
