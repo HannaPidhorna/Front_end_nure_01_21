@@ -1,4 +1,4 @@
-@media (min-width: 768px){
+@media (min-width: 992px){
     .navbar-expand-lg {
         -ms-flex-flow: row nowrap !important;
         flex-flow: row nowrap !important;
@@ -29,19 +29,17 @@
     }
     .navbar-expand-lg .navbar-toggler {
         display: none !important;
-    }}
+    }
+}
 
 .section1 {
     position: relative; 
     width: 100%;
     min-height: 1000px;
-        
-    background: url(../img/__\ IMG-header1.png) no-repeat center/cover;
-    z-index: -2;
-  
+    background: url(../img/bg+GLOW_EFFECT.png) no-repeat center/cover;
 }
 
-.section1::after {
+.section1::before {
     content:"";
     display: block;
     position: absolute;
@@ -51,22 +49,22 @@
     height: 100%;
     top: 0;
     right: 0;
-    z-index: -1;
+   
 }
 
-.section1::before {
+/* .section1::before {
     content:"";
     display: block;
     position: absolute;
     background: radial-gradient(rgb(48, 59, 100) 20%, transparent 60%)no-repeat right;
-   
+    background: url(../img/radial_gradient.png) no-repeat right;
     background-size: 50%;
     width: 50%;
     height: 50%;
     top: -20%;
     right: 0;
     z-index: -1;
-}
+} */
  
 nav a {
     padding: 100px;
