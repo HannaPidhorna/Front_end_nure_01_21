@@ -36,7 +36,7 @@
     position: relative; 
     width: 100%;
     min-height: 1000px;
-    background: url(../img/__\ IMG-header1.png) no-repeat center/cover;
+    background: url(../img/IMG-header1.png) no-repeat center/cover;
 }
 
 .section1::before {
@@ -102,7 +102,6 @@ h2 {
     font-size: 50px;
     padding-bottom: 200px;
     
-
 }
 
 h2 p {
@@ -133,17 +132,10 @@ h3 {
     background-size: 100%;
     width: 100%;
     min-height: 15%;
-    
     left: 0;
     right: 0;
     z-index: -1;
 }
-
-/* blocks */
-/* .tree_color_blocks {
-    padding-bottom: 200px;
-} */
-
 
 /* block green */
 .block_green {
@@ -166,6 +158,23 @@ h3 {
 
 .block_green:hover .membership{
     opacity: 0;
+}
+
+.register {
+    content:"";
+    position: absolute;
+    background: rgb(176, 186, 177,0.9);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.block_green:hover .register {
+    opacity: 1;
 }
 
 .p1 {
@@ -197,41 +206,136 @@ h3 {
     margin-left: 50px;
 }
 
-.register {
+
+/* services */
+
+.section2_1 {
+    padding-bottom: 200px;
+}
+
+.cardio1 {
+    position: relative;
+    padding: 150px;
+  
+}
+.cardio2 {
     content:"";
     position: absolute;
-    background: rgb(176, 186, 177,0.9);
-    background-size: 100%;
+    padding-top: 100px;
+    border: 2px solid #c0bfbf;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.cardio1:hover .cardio2 {
+    opacity: 0;
+}
+.cardio3 {
+    content:"";
+    position: absolute;
+    padding-top: 50px;
+    border: 2px solid #00a8ff;
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.cardio1:hover .cardio3 {
+  opacity: 1;
+}
+.cardio3 p>img {
+    transform: translate(0, -5vh);
+}
+
+.yoga1 {
+    position: relative;
+    padding: 150px;
+}
+
+.yoga2 {
+    content:"";
+    position: absolute;
+    padding-top: 100px;
+    border: 2px solid #c0bfbf;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.yoga1:hover .yoga2 {
+    opacity: 0;
+}
+.yoga3 {
+    content:"";
+    position: absolute;
+    padding-top: 50px;
+    border: 2px solid #00a8ff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     opacity: 0;
 }
 
-.block_green:hover .register {
-    opacity: 1;
+.yoga3 p>img {
+    transform: translate(0, -5vh);
 }
 
-/* services */
-.cardio {
-    min-height: 400px;
-    background-color:grey;
-   
+.yoga1:hover .yoga3 {
+  opacity: 1;
 }
 
-.yoga {
-    min-height: 400px;
-    background-color:white;
-    
+
+.training1 {
+    position: relative;
+    padding: 150px;
 } 
 
-.training {
-    min-height: 400px;
-    background-color: grey;
-} 
+.training2 {
+    content:"";
+    position: absolute;
+    padding-top: 100px;
+    border: 2px solid #c0bfbf;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.training1:hover .training2 {
+    opacity: 0;
+}
+.training3 {
+    content:"";
+    position: absolute;
+    padding-top: 50px;
+    border: 2px solid #00a8ff;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.training1:hover .training3 {
+  opacity: 1;
+}
 
+.training3 p>img {
+    transform: translate(0, -5vh);
+}
 /* section3 */
 .section3 {
     background-color:#f7f7f7;
@@ -253,6 +357,7 @@ h3 {
     left: 0;
     right: 0;
     top: -150px;
+    z-index: -1;
 }
 
 .eva{
@@ -309,6 +414,7 @@ h3 {
 }
 
 /* section5 */
+
 .section5 {
     background-color:#00a8ff;
     width: 100%;
@@ -318,9 +424,11 @@ h3 {
 }
 
 
+
+
 /* section6 */
 .section6_footer {
-    background: url(../img/__\ IMG-header1.png) no-repeat center/cover;
+    background: url(../img/IMG-header1.png) no-repeat center/cover;
     width: 100%;
     min-height: 700px;
     padding-bottom: 200px;
