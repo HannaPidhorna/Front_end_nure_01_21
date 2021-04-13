@@ -361,18 +361,22 @@ h3 {
 }
 
 .eva{
+    min-height: 600px;
+    background: url(../img/eva_img1.png)no-repeat top;
     background-color: white;
-    min-height: 400px;
 }
 
 .nick {
-    background-color: grey;
-    min-height: 400px;
+    background: url(../img/nick_bg1.png) no-repeat top;
+    background-color: white;
+    min-height: 600px;
 }
 
 .john{
+    background: url(../img/john_bg1.png) no-repeat top/contain;
     background-color: white;
-    min-height: 400px;
+   
+    min-height: 600px;
 }
 
 /* section4 */
