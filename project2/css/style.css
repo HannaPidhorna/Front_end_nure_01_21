@@ -360,11 +360,65 @@ h3 {
     z-index: -1;
 }
 
-.eva{
+.team_eva {
     min-height: 600px;
-    background: url(../img/eva_img1.png)no-repeat top;
-    background-color: white;
+    background: url(../img/eva_img1.png)no-repeat top/contain;
 }
+
+.eva{
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.eva1 {
+    content:"";
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    right: 0;
+    left: 0;
+
+}
+
+.eva:hover .eva1{
+    opacity: 0;
+}
+
+.eva2 {
+    content:"";
+    position: absolute;
+    background: rgb(2, 154, 232, 0.75);
+    /* background-size: 50%; */
+    width: 100%;
+    /* min-height: 50%; */
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+}
+
+.eva:hover .eva2 {
+    opacity: 1;
+}
+
+.eva_text1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.eva_text2 {
+    /* padding-top: 300px; */
+    padding-bottom: 50px;
+
+}
+
+.team_eva .btn {
+    margin-left: 100px;
+} 
+
+
+
+
 
 .nick {
     background: url(../img/nick_bg1.png) no-repeat top;
