@@ -100,7 +100,7 @@ h2 {
     text-align: center;
     font-weight: 800;
     font-size: 50px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
     
 }
 
@@ -359,7 +359,7 @@ h3 {
     top: -150px;
     z-index: -1;
 }
-
+/* block eva */
 .team_eva {
     min-height: 600px;
     background: url(../img/eva_img1.png)no-repeat top/contain;
@@ -368,6 +368,19 @@ h3 {
 .eva{
     position: relative;
     padding-bottom: 300px;
+}
+
+.eva::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url(../img/eva_bg2.png)no-repeat;
+    width: 130px;
+    min-height: 130px;
+    top: 55%;
+    left: 35%;
+    z-index: 1;
+
 }
 
 .eva1 {
@@ -388,9 +401,7 @@ h3 {
     content:"";
     position: absolute;
     background: rgb(2, 154, 232, 0.75);
-    /* background-size: 50%; */
     width: 100%;
-    /* min-height: 50%; */
     left: 0;
     right: 0;
     opacity: 0;
@@ -407,31 +418,149 @@ h3 {
 }
 
 .eva_text2 {
-    /* padding-top: 300px; */
     padding-bottom: 50px;
 
 }
 
 .team_eva .btn {
-    margin-left: 100px;
+    margin-left: 110px;
+} 
+
+/* block nick */
+.team_nick {
+    min-height: 600px;
+    background: url(../img/nick_bg1.png)no-repeat top/contain;
+}
+
+.nick{
+    position: relative;
+    padding-bottom: 300px;
+}
+
+.nick::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url(../img/nick_bg2.png)no-repeat;
+    width: 130px;
+    min-height: 130px;
+    top: 55%;
+    left: 35%;
+    z-index: 1;
+
+}
+
+.nick1 {
+    content:"";
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    right: 0;
+    left: 0;
+
+}
+
+.nick:hover .nick1{
+    opacity: 0;
+}
+
+.nick2 {
+    content:"";
+    position: absolute;
+    background: rgb(2, 154, 232, 0.75);
+    width: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+}
+
+.nick:hover .nick2 {
+    opacity: 1;
+}
+
+.nick_text1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.nick_text2 {
+    padding-bottom: 50px;
+
+}
+
+.team_nick .btn {
+    margin-left: 110px;
 } 
 
 
-
-
-
-.nick {
-    background: url(../img/nick_bg1.png) no-repeat top;
-    background-color: white;
+/* block john */
+.team_john {
     min-height: 600px;
+    background: url(../img/nick_bg1.png)no-repeat top/contain;
 }
 
 .john{
-    background: url(../img/john_bg1.png) no-repeat top/contain;
-    background-color: white;
-   
-    min-height: 600px;
+    position: relative;
+    padding-bottom: 300px;
 }
+
+.john::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url(../img/nick_bg2.png)no-repeat;
+    width: 130px;
+    min-height: 130px;
+    top: 55%;
+    left: 35%;
+    z-index: 1;
+
+}
+
+.john1 {
+    content:"";
+    position: absolute;
+    width: 100%;
+    min-height: 50%;
+    right: 0;
+    left: 0;
+
+}
+
+.john:hover .john1{
+    opacity: 0;
+}
+
+.john2 {
+    content:"";
+    position: absolute;
+    background: rgb(2, 154, 232, 0.75);
+    width: 100%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+}
+
+.john:hover .john2 {
+    opacity: 1;
+}
+
+.john_text1 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.john_text2 {
+    padding-bottom: 50px;
+
+}
+
+.team_john .btn {
+    margin-left: 110px;
+} 
+
 
 /* section4 */
 
@@ -442,11 +571,10 @@ h3 {
     padding-bottom: 200px;
     padding-top: 200px;
     position: relative;
-    z-index: -2;
-   
+     
 }
 
-.section4::after {
+.section4::before {
     content:"";
     display: block;
     position: absolute;
@@ -456,8 +584,7 @@ h3 {
     left: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
-
+   
 }
 
 .yoga_pilates {
@@ -466,9 +593,36 @@ h3 {
     
 }
 
+.yoga_button {
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+   
+}
+
+.yoga_button .btn {
+    margin: 10px;
+}
+
+.yoga_text {
+    padding-bottom: 50px;
+}
+
+.list {
+    padding-top: 70px;
+    padding-bottom: 50px;
+
+}
+
 .cardio_training{
     background-color: #bbbbbb;
     min-height: 400px;
+}
+
+.cardio_text {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-bottom: 50px;
 }
 
 /* section5 */
