@@ -414,7 +414,7 @@ h3 {
 
 .eva_text1 {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 105px;
 }
 
 .eva_text2 {
@@ -481,7 +481,7 @@ h3 {
 
 .nick_text1 {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 105px;
 }
 
 .nick_text2 {
@@ -497,7 +497,7 @@ h3 {
 /* block john */
 .team_john {
     min-height: 600px;
-    background: url(../img/nick_bg1.png)no-repeat top/contain;
+    background: url(../img/john_bg1.png)no-repeat top/contain;
 }
 
 .john{
@@ -509,7 +509,7 @@ h3 {
     content:"";
     display: block;
     position: absolute;
-    background: url(../img/nick_bg2.png)no-repeat;
+    background: url(../img/john_bg2.png)no-repeat;
     width: 130px;
     min-height: 130px;
     top: 55%;
@@ -549,7 +549,7 @@ h3 {
 
 .john_text1 {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 .john_text2 {
@@ -630,12 +630,18 @@ h3 {
 .section5 {
     background-color:#00a8ff;
     width: 100%;
-    min-height: 700px;
-    padding-bottom: 200px;
-    padding-top: 200px;
+    min-height: 500px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
+.bird1 img {
+    padding-bottom: 100px;
+}
 
+.bird1 h3{
+    padding-bottom: 150px;
+}
 
 
 /* section6 */
@@ -646,10 +652,10 @@ h3 {
     padding-bottom: 200px;
     padding-top: 200px;
     position: relative;
-    z-index: -2;
+ 
 }
 
-.section6_footer::after {
+.section6_footer::before {
     content:"";
     display: block;
     position: absolute;
@@ -659,10 +665,10 @@ h3 {
     height: 100%;
     top: 0;
     right: 0;
-    z-index: -1;
+  
 }
 
-.section6_footer::before {
+/* .section6_footer::before {
     content:"";
     display: block;
     position: absolute;
@@ -674,7 +680,7 @@ h3 {
     top: -50px;
     right: -50px;
     z-index: -1;
-}
+} */
 
 .section6 {
     padding-bottom: 100px;
@@ -684,7 +690,28 @@ h3 {
     min-height: 400px;
 }
 
+.reserve .btn {
+    margin: 0;
+}
+
+.reserve_text {
+    padding-bottom: 50px;
+
+}
+
 .opening_hours {
     min-height: 400px;
    
+}
+
+.opening_hours h3 {
+    padding-bottom: 50px;
+}
+
+.hours1 {
+    margin: 20px;
+}
+
+.hours2 {
+    margin: 20px;
 }
