@@ -137,6 +137,31 @@ h3 {
     z-index: -1;
 }
 
+/* red block */
+.red_carousel h6 span {
+    display: block;
+    width: 25px;
+    height: 30px;
+    background-image: url(../img/red_logo3.png);
+    margin-right: 10px;
+
+}
+
+.red_carousel h6 .sp1 {
+    background-position: 0;
+}
+
+.red_carousel h6 .sp2 {
+    background-position: 53px;
+}
+
+.red_carousel h6 .sp3 {
+    background-position: 103px;
+}
+
+
+
+
 /* block green */
 .block_green {
     background: url(../img/block2_bg_green.png) no-repeat center/cover;
@@ -218,6 +243,21 @@ h3 {
     padding: 150px;
   
 }
+
+.cardio1 span {
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-image: url(../img/services_logo.png);
+    margin: 0 auto;
+   
+}
+
+.cardio1 span {
+    background-position: 0;
+}
+
+
 .cardio2 {
     content:"";
     position: absolute;
@@ -249,13 +289,26 @@ h3 {
 .cardio1:hover .cardio3 {
   opacity: 1;
 }
-.cardio3 p>img {
+.cardio3 span {
     transform: translate(0, -5vh);
 }
 
 .yoga1 {
     position: relative;
     padding: 150px;
+}
+
+.yoga1 span {
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-image: url(../img/services_logo.png);
+    margin: 0 auto;
+   
+}
+
+.yoga1 span {
+    background-position: 130px;
 }
 
 .yoga2 {
@@ -287,7 +340,7 @@ h3 {
     opacity: 0;
 }
 
-.yoga3 p>img {
+.yoga3 span {
     transform: translate(0, -5vh);
 }
 
@@ -300,6 +353,19 @@ h3 {
     position: relative;
     padding: 150px;
 } 
+
+.training1 span {
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-image: url(../img/services_logo.png);
+    margin: 0 auto;
+   
+}
+
+.training1 span {
+    background-position: 70px;
+}
 
 .training2 {
     content:"";
@@ -333,7 +399,7 @@ h3 {
   opacity: 1;
 }
 
-.training3 p>img {
+.training3 span {
     transform: translate(0, -5vh);
 }
 /* section3 */
@@ -714,4 +780,28 @@ h3 {
 
 .hours2 {
     margin: 20px;
+}
+
+
+footer .sprites .logo li {
+     list-style-type: none; 
+}
+
+
+footer .sprites .logo li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/sprites_freebg.png);
+        
+}
+
+footer .sprites .logo li > a{
+	background-position: 0;
+}
+footer .sprites .logo li + li > a{
+	background-position: 90px;
+}
+footer .sprites .logo li + li +li > a{
+	background-position: 45px;
 }
