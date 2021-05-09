@@ -63,9 +63,6 @@ table {
     margin: 0 auto;
 }
 
-body {
-    background: url(../img/бэкграунд.png);
-}
 
 .clearfix:after {
     content: " ";
@@ -74,14 +71,26 @@ body {
 }
 
 /* <header> */
-.tel {
+header {
+    padding-bottom: 100px;
+    background: linear-gradient(to right, #e8e8e8, #eaeaea);
+}
+
+.map_tel {
     text-align: right;
+}
+
+.map {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .tel li>a {
     text-decoration: none;
     color:black;
     font-weight: 600;
+    padding-top: 20px;
 }
 
 .links {
@@ -98,7 +107,6 @@ body {
 }
 
 .links li>a {
-    display: inline-block;
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -111,9 +119,8 @@ body {
     content: " ";
     background-color:#185e90;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
-    margin-top: 15px;
     width: 5px;
     height: 5px;
 }
@@ -161,8 +168,8 @@ body {
     /* font: 400 20px/1.5 black; */
     text-transform: uppercase;
     width: 250px;
-    padding-left: 100px;
-    padding-top: 130px;
+    padding-left: 120px;
+    padding-top: 125px;
     
 }
 
@@ -178,34 +185,55 @@ body {
 /* section2 */
 
 .services {
-    
-     padding-top: 200px;
-     font-size: 0;
+    background-color: white;
+    margin-bottom: 50px;
  
 }
 
-.services div {
-    font-size: 16px;
+.services .container div {
+    float: left;
+    padding-top: 50px;
 }
 
-.services div h3 {
-    display: inline-block;
+.services .container div>a {
+    color: #185e90;
+    padding-left: 5px;
+}
+
+
+.services h3 {
+  
     font-size: 16px;
     position: relative;
     padding-left: 15px;
+    color:#185e90;
 }
 
-.services div h3::before {
+.services h3::before {
     display: block;
     content: " ";
     background-color:#185e90;
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 0;
+    top: 20%;
     left: 0;
-    margin-top: 3px;
-    margin-right: 5px;
+
+}
+
+.services div>ul {
+    padding-top: 30px;
+    margin-bottom: 20px;
+    display: block;
+
+}
+
+.services div>ul li {
+    padding: 5px;
+}
+
+.services div>ul a {
+    color: black;
 }
 
 .business {
@@ -221,10 +249,11 @@ body {
     content: " ";
     position: absolute;
     background: url(../img/business1.png) no-repeat left;
-    top: 0;
+    top: 70px;
     left: 0;
     width: 70px;
     min-height: 140px;
+    
 }
 
 
@@ -232,7 +261,7 @@ body {
     content: " ";
     position: absolute;
     background-color: #6f6f6f;
-    top: 0;
+    top: 50px;
     left: 65px;
     width: 1px;
     min-height: 200px;
@@ -252,7 +281,7 @@ body {
     content: " ";
     position: absolute;
     background: url(../img/user2.png) no-repeat left;
-    top: 0;
+    top: 70px;
     left: 0;
     width: 70px;
     min-height: 130px;
@@ -262,7 +291,7 @@ body {
     content: " ";
     position: absolute;
     background-color: #6f6f6f;
-    top: 0;
+    top: 50px;
     left: 70px;
     width: 1px;
     min-height: 200px;
@@ -280,7 +309,7 @@ body {
     content: " ";
     position: absolute;
     background: url(../img/sale3.png) no-repeat left;
-    top: 30%;
+    top: 100px;
     left: 0;
     width: 90px;
     min-height: 100px;
@@ -290,7 +319,7 @@ body {
     content: " ";
     position: absolute;
     background-color: #6f6f6f;
-    top: 0;
+    top: 50px;
     left: 85px;
     width: 1px;
     min-height: 200px;
@@ -298,15 +327,11 @@ body {
 
 }
 
-.services div>ul {
-    padding-top: 30px;
-    display: block;
-
-}
-
 /* .news_justice */
 .news_justice {
-    padding-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(to right, #e8e8e8, #eaeaea);
 
 }
 
@@ -326,16 +351,20 @@ body {
     margin-top: 20px;
 }
 
-.news div>h4 {
+.news div>h4 a {
     width: 100px;
     background-color:#3676a4;
     color: white;
-    padding-left: 10px;
+    padding: 5px;
+    text-decoration: none;
    
 }
- h3 {
+.news_justice h3 a {
     color: #3676a4;
- }
+    text-decoration: none;
+    cursor: pointer;
+    
+}
 
  /* justice */
 
@@ -344,6 +373,7 @@ body {
      float: left;
      margin: 10px;
      padding-left: 50px;
+     padding-bottom: 100px;
  }
 
 .justice p {
@@ -354,21 +384,18 @@ body {
 /* button */
 
 .button {
-    max-width: 1200px;
-    min-height: 60px;
+    /* min-width: 1200px; */
     font-size: 0;
     position: relative;
-    padding-top: 300px;
-        
+         
 }
 
 .button div {
     display: inline-block;
     text-align: center;
-    min-width: 40%;
     background-color:#3676a4;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
 
 } 
 
@@ -376,16 +403,17 @@ body {
     content: " ";
     position: absolute;
     background: linear-gradient(to right, #135482 50%, #6eabd6 50%);
+    /* background: url(/img/stick.png); */
     bottom: 0;
     left: 50%;
-    width: 4px;
-    min-height: 20px;
+    width: 3px;
+    min-height: 25px;
     margin: 5px;
 }
 
 .button a {
     display: block;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color: white;
     
@@ -393,20 +421,20 @@ body {
 
 .button h2 {
     font-size: 16px;
-    font-weight: 100;
-}
+    font-weight: 300;
+} 
 
 /* footer */
 
 footer {
-    padding-top: 50px;
+
     padding-bottom: 50px;
+    background: linear-gradient(to right, #e8e8e8, #eaeaea);
     
 }
 
 footer .adress {
     float: right;
-    padding-left: 100px;
     width: 300px;
   
 }
@@ -420,8 +448,8 @@ footer .adress {
 /* logo */
  footer .sprites{
     float: left;
-    padding-right: 100px;
     width: 120px;
+    margin-left: 20px;
    
 }
 
@@ -472,11 +500,10 @@ footer li + li +li +li > a:hover{
 /* copyright */
 
 .copyright {
-    float: left;
-    width: 400px;
+   
+    text-align: center;
     padding-top: 50px;
-    padding-left: 150px;
-    color: black;
+   
 }
 
 .copyright a {
